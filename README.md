@@ -40,6 +40,8 @@ This is our final year project. It has two parts: a YOLOv8-based inference API, 
 
 Python 3.10, FastAPI, and Ultralytics YOLOv8. The trained weights (`rebar_yolov8s_100_epochs.pt`) are included in the repo.
 
+On the 135-image validation set the model reaches precision 0.983, recall 0.971, mAP@0.50 0.988, and 96.82% counting accuracy (MAE 4.39 rebar/image). See [Model Performance](backend/README.md#model-performance) for the full tables.
+
 Quick start:
 
 ```bash

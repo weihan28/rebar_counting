@@ -7,12 +7,13 @@ An AI-powered backend API for automated rebar counting using PyTorch and FastAPI
 ## 📌 Table of Contents
 
 1. [Project Overview](#project-overview)  
-2. [Prerequisites](#prerequisites)  
-3. [Running Locally](#running-locally)  
-4. [Using Docker](#using-docker)  
-5. [Deployment via GitHub Actions](#deployment-via-github-actions)  
-6. [Environment Variables and Secrets](#environment-variables-and-secrets)  
-7. [File Structure](#file-structure)
+2. [Model Performance](#model-performance)  
+3. [Prerequisites](#prerequisites)  
+4. [Running Locally](#running-locally)  
+5. [Using Docker](#using-docker)  
+6. [Deployment via GitHub Actions](#deployment-via-github-actions)  
+7. [Environment Variables and Secrets](#environment-variables-and-secrets)  
+8. [File Structure](#file-structure)
 
 ---
 
@@ -21,6 +22,31 @@ An AI-powered backend API for automated rebar counting using PyTorch and FastAPI
 This project serves a trained YOLOv8 PyTorch model through a FastAPI backend. It receives image uploads, processes them, and returns the rebar count. It’s intended to be consumed by a mobile app frontend.
 
 The backend is containerized via Docker and supports CI/CD integration through GitHub Actions and Render.com.
+
+---
+
+## 📊 Model Performance
+
+![Model performance](performance.png)
+
+Detection metrics:
+
+| Metric       | Value |
+|--------------|-------|
+| Precision    | 0.983 |
+| Recall       | 0.971 |
+| F1-score     | 0.977 |
+| mAP@0.50     | 0.988 |
+| mAP@0.50-0.95| 0.743 |
+
+Counting metrics (on the validation set):
+
+| Metric                  | Value |
+|-------------------------|-------|
+| Validation images       | 135   |
+| MAE (rebar/image)       | 4.39  |
+| Counting accuracy (%)   | 96.82 |
+| Exact-match accuracy (%)| 26.67 |
 
 ---
 
