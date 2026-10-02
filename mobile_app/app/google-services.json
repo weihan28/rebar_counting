@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "840106187140",
+    "project_id": "rebar-counting-app",
+    "storage_bucket": "rebar-counting-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840106187140:android:760066bda8798df6f425d1",
+        "android_client_info": {
+          "package_name": "com.fyp.rebarcountingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrCSlG78wAwNIfzCqx2hVI3bR87ZefChU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
